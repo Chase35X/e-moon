@@ -1,0 +1,126 @@
+
+/* Fonts */
+.league-spartan-title-font {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.league-spartan-slogan-font, input::placeholder {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.raleway-communities {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* -----------------------------------------------  BANNER  ------------------------------------------------------------ */
+#titleBanner {
+    height: 20em;
+    background-image: url('https://media.istockphoto.com/id/1406927873/vector/subtle-gradient-blend-background.jpg?s=612x612&w=0&k=20&c=QobMWoFJTszTReSo6am7A-vlEygNVM9S0C4zQAzyPUE=');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#titleText {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+#titleSlogan {
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+#accountLogo-container{
+    float: right;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    color: white;  
+}
+
+#accountLogo{
+    border: white 2px solid;  
+    padding: 5px;
+    border-radius: 15px;
+}
+
+/* -----------------------------------------------  Content  ------------------------------------------------------------ */
+#subCommunities, #mainFeed, #ads {
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+}
+
+/* -----------------------------------------------  Subcommunities  ------------------------------------------------------------ */
+
+#subCommunities{
+    color: white;
+    text-transform: uppercase;
+    border-right: white 2px solid;
+}
+
+#communitiesTitle{
+    margin-top: 35px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.community{
+    padding: 10px;
+}
+
+/* -----------------------------------------------  General Feed  ------------------------------------------------------------ */
+
+#searchbar-container{
+    margin-top: 35px;
+    align-items: center;
+    padding: 10px;
+}
+
+#inputMagnify{
+    color: white;
+    padding-right: 5px;
+}
+
+#questionInput{
+    height: 2em;
+    border-radius: 15px;
+    padding: 15px;
+    width: 50%;
+}
+
+#clearInput{
+    color: white;
+    font-size: 2em;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+/* -----------------------------------------------  My Activity  ------------------------------------------------------------ */
+
+#ads {
+    border-left: white 2px solid;
+}
+
+#myActivityTitle {
+    color: white;
+    margin-top: 35px;
+    text-decoration: underline;
+    text-transform: uppercase;
+
+}
