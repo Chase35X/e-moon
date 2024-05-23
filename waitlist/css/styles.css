@@ -1,0 +1,23 @@
+
+/* Fonts */
+.league-spartan-title-font {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.league-spartan-slogan-font, input::placeholder {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.raleway-communities {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
