@@ -37,8 +37,18 @@ async function submit(){
     else{
         var repeatedEmail = repeatedEmailCheck(email) 
         
-        if(repeateEmail == false){
+        if(repeatedEmail == false){
+            var newSubmissionURL = 'https://us-east-1.aws.data.mongodb-api.com/app/e-moon-vjusocg/endpoint/newSubmission'
             
+            newSubmissionURL += '?arg1=' + email
+
+            let response = await fetch(newSubmissionURL)
+            .then(data => {
+                return data;
+            })           
+
+            const result = await response.json() 
+            console.log(result)
         }
 
         else{
