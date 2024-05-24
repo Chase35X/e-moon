@@ -16,6 +16,7 @@ async function repeatedEmailCheck(email){
     })           
 
     const user = await response.json() 
+    console.log(user)
     
     if(user==null){
         return false;
@@ -35,14 +36,18 @@ async function submit(){
     }
 
     else{
-        var repeatedEmail = repeatedEmailCheck(email) 
+        var repeatedEmail = await repeatedEmailCheck(email) 
         
         if(repeatedEmail == false){
             var newSubmissionURL = 'https://us-east-1.aws.data.mongodb-api.com/app/e-moon-vjusocg/endpoint/newSubmission'
             
             newSubmissionURL += '?arg1=' + email
 
-            let response = await fetch(newSubmissionURL)
+            const options = {
+                method: 'POST'
+            };
+
+            let response = await fetch(newSubmissionURL, options)
             .then(data => {
                 return data;
             })           
