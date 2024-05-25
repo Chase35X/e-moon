@@ -66,8 +66,8 @@ async function onWaitlist(email){
 function setContent(email, icon_new, text_new, subtext_new){
     var icon = document.getElementById('icon')
     var email_text = document.getElementById('email')
-    var text = document.getElementById('text_new')
-    var subtext = document.getElementById('subtext_new')
+    var text = document.getElementById('text')
+    var subtext = document.getElementById('subtext')
 
     icon.innerHTML = icon_new
     email_text.innerHTML = email
