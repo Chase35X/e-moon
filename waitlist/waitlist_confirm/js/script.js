@@ -12,11 +12,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     else{
         if(onWaitlist(email)){
-            setContent(email,'✔️','You are already on the waitlist.','Thank you for your support from the e-moon team')
+            setContent(email,'🎉','You are on the waitlist','Thank you for your support from the e-moon team')
         }
 
         else{
-            setContent(email,'🎉','You are on the waitlist!', 'Thank you for your support from the e-moon team')
+            window.location.href="/e-moon/waitlist/waitlist_entry"
         }
     }
 

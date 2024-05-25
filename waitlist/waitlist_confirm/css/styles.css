@@ -21,9 +21,15 @@ body{
 }
 
 #icon, #text {
-    size: 3em;
+    font-size: 3em;
+    padding: 10px;
 }
 
 #email, #subtext{
-    size: 2em;
+    font-size: 2em;
+    padding: 10px;
+}
+
+.container {
+    padding: 35px;
 }
