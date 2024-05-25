@@ -16,3 +16,14 @@
 
 
 /* -----------------------------------------------  Confirmed Waitlist Content  ------------------------------------------------------------ */
+body{
+    text-align: center;
+}
+
+#icon, #text {
+    size: 3em;
+}
+
+#email, #subtext{
+    size: 2em;
+}

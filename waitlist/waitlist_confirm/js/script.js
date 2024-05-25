@@ -1,10 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", (event) => {
     const url = window.location.search
-    console.log(url)
     
     const urlParams = new URLSearchParams(url);
-    console.log(urlParams)
 
     var email = urlParams.get('email')
 
@@ -14,11 +12,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     else{
         if(onWaitlist(email)){
-            setContent(email,'✔️','You are already on the waitlist.','Thank you for your support   - e-moon team')
+            setContent(email,'✔️','You are already on the waitlist.','Thank you for your support from the e-moon team')
         }
 
         else{
-            setContent(email,'🎉','You are on the waitlist!', 'Thank you for your support   - e-moon team')
+            setContent(email,'🎉','You are on the waitlist!', 'Thank you for your support from the e-moon team')
         }
     }
 
@@ -36,7 +34,6 @@ async function onWaitlist(email){
     })           
 
     const user = await response.json() 
-    console.log(user)
     
     if(user==null){
         return false;
@@ -70,7 +67,7 @@ function setContent(email, icon_new, text_new, subtext_new){
     var subtext = document.getElementById('subtext')
 
     icon.innerHTML = icon_new
-    email_text.innerHTML = email
+    email_text.innerHTML = 'For the email: ' + email
     text.innerHTML = text_new
     subtext.innerHTML = subtext_new
 }
