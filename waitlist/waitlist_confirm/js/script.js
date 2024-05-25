@@ -69,9 +69,9 @@ function setContent(email, icon_new, text_new, subtext_new){
     var text = document.getElementById('text_new')
     var subtext = document.getElementById('subtext_new')
 
-    icon.value = icon_new
-    email_text.value = email
-    text.value = text_new
-    subtext.value = subtext_new
+    icon.innerHTML = icon_new
+    email_text.innerHTML = email
+    text.innerHTML = text_new
+    subtext.innerHTML = subtext_new
 }
 
