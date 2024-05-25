@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     var email = urlParams.get('email')
 
     if(email == null){
-        window.location.href="/waitlist/waitlist_entry"
+        window.location.href="/e-moon/waitlist/waitlist_entry"
     }
 
     else{
