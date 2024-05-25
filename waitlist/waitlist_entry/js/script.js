@@ -50,13 +50,36 @@ async function submit(){
             let response = await fetch(newSubmissionURL, options)
             .then(data => {
                 return data;
-            })           
+            })    
 
             const result = await response.json() 
-            console.log(result)
+
+            if(response.status == 200){
+                //window.location.href = "/waitlist/waitlist_confirm/?email=" + email;
+            }
+
+            else{
+                alert("Something went wrong, please try again.")
+            }
         }
 
         else{
+            var repeatedWaitlistURL = 'https://us-east-1.aws.data.mongodb-api.com/app/e-moon-vjusocg/endpoint/repeatedWaitlistEntry'
+
+            repeatedWaitlistURL += '?arg1=' + email
+
+            const options = {
+                method: 'PUT'
+            };
+
+            let response = await fetch(repeatedWaitlistURL, options)
+            .then(data => {
+                return data;
+            })    
+
+            const result = await response.json() 
+
+
             alert("This email is already on the waitlist.")
         }
         
