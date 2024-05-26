@@ -55,7 +55,7 @@ async function submit(){
             const result = await response.json() 
 
             if(response.status == 200){
-                window.location.href = "/e-moon/waitlist/waitlist_confirm/?email=" + email;
+                window.location.href = "/waitlist/waitlist_confirm/?email=" + email;
             }
 
             else{
